@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+    <body>
+        <!-- ---------- The nav bar ---------- -->
+        <header>
+            <label for="check"><img src="../images/logo.png" class="logo"></label>
+            <input type="checkbox" id="check" class="btn-nav">
+            <label for="check"><img src="../icones/arrow-down-sign-to-navigate.png" class="open-nav"></label>
+            <ul class="nav">
+                <li>
+                    <img src="../icones/home.png">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <img src="../icones/community.png">
+                    <a href="../community-page/community.html">Cmmunity</a>
+                </li>
+                <li>
+                    <img src="../icones/cart.png">
+                    <a href="../Cart-page/cart.html">Cart</a>
+                </li>
+                <li>
+                    <img src="../icones/support.png">
+                    <a href="../support-page/support.html">Support</a>
+                </li>
+                <li>
+                    <img src="../icones/event.png">
+                    <a href="../events-page/events.html">Events</a>
+                </li>
+                <li>
+                    <img src="../icones/information.png">
+                    <a href="../About-page/about.html">About</a>
+                </li>
+                <li>
+                    <label for="check" class="return">
+                        <img src="../icones/arrow-down-sign-to-navigate (1).png" class="close-nav">
+                        <p>return</p>
+                    </label>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <input type="checkbox" id="check-search">
+                <input type="checkbox" id="check-user">
+                <a href="../get-launche-page/get-launche.html" class="get">GET LAUNCHER</a>
+                <label for="check-search"><img src="../icones/search.png" class="space"></label>
+                <label for="check-user"><img src="../icones/user.png" class="space"></label>
+                <div class="utilisateur">
+                    <a href="../Login-Page/login.html">Login</a>
+                    <a href="../sign-up-page/sign-up.html">Sign up</a>
+                </div>
+                <div class="search-bar">
+                    <input type="search" placeholder="search">
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- ---------- Content ---------- -->
+        <div class="all">        
+            <main>
+                <section>
+                    <article class="art1">
+                        <p>Cart</p>
+                        <p>2 items</p>
+                    </article>
+                    <article class="art2">
+                        <table>
+                            <tr class="detail">
+                                <td>game details</th>
+                                <td class="reduction">reduction</th>
+                                <td>price without reduction</th>
+                                <td>price with reduction</th>
+                            </tr>
+                            <tr>
+                                <td class="game">
+                                    <img src="../images/valorant.jpg">
+                                    <div>
+                                        <a href="../valorant/index.html">Valorant</a>
+                                        <p>basic game</p>
+                                    </div>
+                                </td>
+                                <td class="reduction">
+                                    100%
+                                </td>
+                                <td>
+                                    30,00$
+                                </td>
+                                <td>
+                                    0,00$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="game">
+                                    <img src="../images/Assassin.jpg">
+                                    <div>
+                                        <a href="../valorant/index.html">Assassin's creed</a>
+                                        <p>basic game</p>
+                                
+                                    </div>
+                                </td>
+                                <td class="reduction">
+                                    50%
+                                </td>
+                                <td>
+                                    69,99$
+                                </td>
+                                <td>
+                                    34,99$
+                                </td>
+                            </tr>
+                        </table>
+                        <article class="continue"><a href="../index.html"><img src="../icones/arrow-button.png"><p>Continue browsing games</p></a></article>
+                    </article>
+                </section>
+                <section>
+                    <p class="title">Order Summary</p>
+                    <div class="form">
+                        <article class="art3"><p>items 2</p><p>34,99$</p></article>
+                        <form>
+                            <label for="">promo code</label>
+                            <input type="text" placeholder="Enter your code" autofocus>
+                            <button>Apply</button>
+                        </form>
+                        <div class="total">
+                            <div>
+                                <p>total cost</p>
+                                <p>34,99$</p>
+                            </div>
+                            <a href="../payement-page/payement.html">Checkout</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+
+
+        <!-- ---------- footer ---------- -->
+        <footer>
+            <div class="parent">
+                <div class="links">
+                    <ul>
+                        <a href="../index.html">Home</a>
+                        <a href="../community-page/community.html">Community</a>
+                        <a href="../About-page/about.html">About</a>
+                        <a href="../support-page/support.html">Support</a>
+                        <a href="../events-page/events.html">Events</a>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <a><img src="../icones/facebook-app-symbol.png" alt=""></a>
+                    <a><img src="../icones/gmail.png" alt=""></a>
+                    <a><img src="../icones/instagram (1).png" alt=""></a>
+                    <a><img src="../icones/linkedin (2).png" alt=""></a>
+                    <a><img src="../icones/twitter (1).png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

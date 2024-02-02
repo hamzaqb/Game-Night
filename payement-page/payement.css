@@ -1,0 +1,221 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    color: #fff;
+    background: #000;
+}
+
+
+
+/* ---------- content ---------- */
+.all{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    gap: 15px;
+    width: 80%;
+}
+.parent1{
+    border: 1px solid #fff;
+    width: 60%;
+    border-radius: 15px;
+}
+.parent01{
+    margin: 30px;
+}
+.child{
+    display: flex;
+}
+.child-h2{
+    border-bottom: 1px solid#fff;
+    padding-bottom: 20px;
+}
+.child1{
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid blue;
+    background-color: rgb(0, 0, 255);
+    border-radius: 8px;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+}
+.child1 img{
+    width: 50px;
+    border-radius: 8px;
+}
+form{
+    margin-top: 30px;
+    border-radius: 8px;
+}
+form input,label{
+    display: block;
+    margin-top: 20px;
+}
+form input{
+    width: 70%;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 8px;
+}
+.child22{
+    width: 70%;
+    display: flex;
+}
+.select1{
+    width: 23%;
+} 
+.select1 select{
+    width: 95%;
+    padding: 10px;
+}
+.select2{
+    width: 23%;
+} 
+.select2 select{
+    width: 95%;
+    padding: 10px;
+    color: black;
+}
+.select3{
+    width: 24%;
+} 
+.select3 input{
+    width: 95%;
+    padding: 8px;
+    margin-top: 0px;
+    border-radius: 0px;
+}
+.parent2{
+    border: 1px solid #fff;
+    width: 40%;
+    border-radius: 15px;
+}
+.parent02{
+    margin: 30px;
+}
+.child022{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.child022 img{
+    width: 17%;
+}
+.child022p{
+    background-color: blue;
+    width: fit-content;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin: 6px 0px;
+}
+.child233{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.p2 p{
+    color: rgba(255, 255, 255, 0.445);
+}
+.button button{
+    width: 50%;
+    padding: 13px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: blue;
+    border: none;
+    transition: 0.5s;
+}
+.button button a{
+    color: white;
+    text-decoration: none;
+}
+button:hover{
+    background-color: rgb(18, 106, 221);
+}
+
+
+/* ---------- footer ---------- */
+footer{
+    height: fit-content;
+    padding: 30px 0px;
+}
+.parent{
+    width:100%;
+    margin: 0 auto;
+}
+.links{
+    width: fit-content;
+    margin: 0 auto;
+}
+.links ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.links ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+.links ul a:hover{
+    color:blue;
+}
+.social-media{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+}
+.social-media a{
+    width:20px;
+    height:20px;
+    margin-top: 20px;
+}
+.social-media a img{
+    width: 100%;
+}
+
+
+
+/* ---------- responsive using @media ---------- */
+@media screen and (max-width:1140px){
+    section{
+        display: block;
+        margin-top: 200px;
+        
+    }
+    .parent1{
+        width: 100%;
+    }
+    .parent2{
+        width: 100%;
+        margin-top: 15px;
+    }
+    footer{
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width:768px){
+    section{
+        width: 90%;
+    }
+    form input,.child22{
+        width: 90%;
+    }
+
+}

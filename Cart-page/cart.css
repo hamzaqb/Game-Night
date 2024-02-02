@@ -1,0 +1,432 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+}
+
+
+
+/* ---------- The nav bar ---------- */
+header{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.nav{
+    width: 0px;
+    color:white;
+    background-color: #001;
+    overflow: hidden;
+    transition: .6s ;
+    margin-left: 15px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    opacity: 0;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.69);
+}
+.nav li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+#check:checked ~.nav{
+    width: 135px;
+    opacity: 1;
+}
+label{
+    color: white;
+}
+.nav li{
+    display:flex;
+    margin-top: 18px;
+    gap:10px;
+    margin-left: 11px;
+    padding: 0px 0px 4px 10px;
+    text-align: center;
+    align-items: center;
+    transition: .2s;
+}
+.nav:hover li{
+    opacity: .4;
+}
+.nav li:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.nav li img{
+    width:20px;
+    height: 20px;
+    margin-top: 7px;
+}
+.logo{
+    width: 60px;
+    cursor: pointer;
+    margin: 5px;
+
+}
+.open-nav{
+    width:20px;
+    transform: rotate(-90deg) translate(25px,-10px);
+    opacity: .4;
+    transition: .5s;
+    
+}
+.open-nav:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1) translate(-8px,1px);
+
+}
+.close-nav{
+    transform:translateY(-4px) rotate(-90deg);
+    cursor: pointer;
+    transition: .5s;
+}
+.close-nav:hover{
+    transform: scale(1.1) translateY(-10px);
+}
+.btn-nav{
+    display: none;
+}
+.nav li label{
+    cursor: pointer;
+}
+.return{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-right{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 5px;
+
+}
+.space,.get{
+    margin: 5px ;
+    cursor: pointer;
+
+}
+.nav-right a{
+    text-decoration: none;
+}
+.nav-right .get{
+    position: relative;
+    bottom: 13px;
+    color: white;
+    background-color: #3c99e9;
+    padding: 10px;
+    border-radius: 8px;
+}
+.nav-right img{
+    width: 30px;
+}
+.utilisateur{
+    width:170px;
+    transform: translate(40px,200px);
+    background-color: rgba(0, 0, 0, 0.355);
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 15px;
+    opacity: 0;
+    transition: .6s;
+}
+.utilisateur a{
+    display: block;
+    color: white;
+    text-align: center; 
+    transition: .2s;
+}
+.utilisateur a+a{
+    margin-top: 10px;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+}
+.utilisateur a:hover{
+    transform: scale(1.1);
+}
+#check-user:checked ~.utilisateur{
+    opacity: 1;
+    transform: translate(40px,20px);
+    display: block;
+}
+.search-bar{
+    opacity: 0;
+    transition: .6s;
+    width: 250px;
+}
+.search-bar input{
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+}
+#check-search:checked ~.search-bar{
+    opacity: 1;
+    transform: translateY(-80px);
+}
+.nav-right input[type="checkbox"]{
+    display: none;
+}
+
+
+
+/* ---------- Content ---------- */
+.all{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/all-games3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow:inset 0px 0px 1000px black;
+    z-index: -2;
+}
+main{
+    width: 70%;
+    display: flex;
+    gap: 15px;
+    z-index: 1;
+}
+main section{
+    width: 70%;
+    border: 2px solid gray;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: #002;
+}
+main section+section{
+    width: 30%;
+    color: white;
+}
+main section .art1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+main section .art2{
+    width: 100%;
+}
+main section .art2 table{
+    width: 100%;
+    margin-top:20px;
+    color: white;
+}
+main section .art2 table .detail td{
+    font-variant: small-caps;
+    padding-bottom: 15px;
+    text-align: start;
+    padding-right: 0px;
+}
+main section .art2 table td{
+    margin-bottom: 15px;
+    text-align: end;
+    padding-right: 15px;
+}
+
+main section .art2 table tr .game{
+    display: flex;
+    gap: 10px;
+    text-align: start;
+    padding-right: 0px;
+}
+main section .art2 table tr .game div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main section .art2 table tr .game div a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-weight: 600;
+}
+main section .art2 table tr .game div p{
+    color: gray;
+    font-variant: small-caps;
+    font-size: 14px;
+}
+main section .art2 table tr td img{
+    width: 70px;
+    height: 100px;
+    display: block;
+    border-radius: 10px;
+}
+main section .art2 .continue a{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+main section .art2 .continue a img{
+    width: 25px;
+}
+main section+section .title{
+    font-size: 20px;
+    font-weight: 700;
+}
+main section+section .art3{
+    display: flex;
+    justify-content: space-between;
+}
+main section+section .form{
+    margin: 30px 0px;
+}
+main section+section form label,input{
+    display: block;
+}
+main section+section form label{
+    margin:40px 0px 5px 5px ;
+}
+main section+section form input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.345);
+    border: none;
+    color: white;
+}
+main section+section form button{
+    background-color: #3c99e9;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+main section+section .form .total{
+    margin-top: 10px;
+}
+main section+section .form .total div{
+    display: flex;
+    justify-content: space-between;
+}
+main section+section .form .total a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #3c99e9;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+
+
+/* ---------- Footer ---------- */
+footer{
+    height: fit-content;
+    padding: 30px 0px;
+}
+.parent{
+    width:100%;
+    margin: 0 auto;
+}
+.links{
+    width: fit-content;
+    margin: 0 auto;
+}
+.links ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.links ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+.links ul a:hover{
+    color:blue;
+}
+.social-media{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+}
+.social-media a{
+    width:20px;
+    height:20px;
+    margin-top: 20px;
+}
+.social-media a img{
+    width: 100%;
+}
+
+
+
+/* ---------- Responsive using @media ---------- */
+@media screen and (max-width:1100px){
+    main{
+        display: block;
+        transform: translateY(80px);
+    }
+    main section{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    main section+section{
+        width: 90%;
+    }
+    footer{
+        margin-top: 150px;
+    }
+
+}
+@media screen and (max-width:800px){
+    main{
+        width: 90%;
+    }
+    main section{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    main section+section{
+        width: 90%;
+    }
+}
+@media screen and (max-width:540px){
+    main{
+        width: 98%;
+        transform: translateY(170px);
+    }
+    main section{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    main section+section{
+        width: 100%;
+    }
+}
+@media screen and (max-width:480px){
+    table .reduction{
+        display: none;
+    }
+}
