@@ -18,4 +18,4 @@ For video games, we did not develop landing pages for all games. We only develop
 
 Technologies Used : 
 
-HTML, CSS
+HTML, CSS, BOOTSTRAP
