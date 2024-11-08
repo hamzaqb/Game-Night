@@ -11,7 +11,7 @@ Features
     Categories: Browse games by type (basic, additional content).
 
 Getting Started
-Visit the live site here.
+Visit the live site https://hamzaqb.github.io/Game-Night/.
 
 Technologies Used
 HTML, CSS
